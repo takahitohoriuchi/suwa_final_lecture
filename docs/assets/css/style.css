@@ -1,6 +1,6 @@
 /* Site-wide styles for the final lecture website. */
 
-[aria-label="パンくずリスト"] ol {
+[aria-label='パンくずリスト'] ol {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5rem;
@@ -9,7 +9,22 @@
 	padding: 0;
 }
 
-[aria-label="パンくずリスト"] li + li::before {
-	content: ">";
+[aria-label='パンくずリスト'] li + li::before {
+	content: '>';
 	margin-right: 0.5rem;
+}
+
+/* 傍点 */
+.bout {
+	font-style: normal;
+	background: none !important;
+	background-color: transparent !important;
+	text-emphasis: filled circle;
+	-webkit-text-emphasis: filled circle;
+	text-emphasis-position: over right;
+	-webkit-text-emphasis-position: over;
+}
+
+em {
+	background-color: transparent !important;
 }
